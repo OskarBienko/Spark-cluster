@@ -64,7 +64,7 @@ The result after typing ls command should look like below:
 Add the Spark environment variables to ~/.profile and source it to the current shell session.
 
 ```bash
-usr/local$ export SPARK_HOME=/usr/local/spark
+usr/local$ export SPARK_HOME=/usr/local/spark-2.4.4-bin-hadoop2.7
 usr/local$ export PATH=$PATH:$SPARK_HOME/bin
 usr/local$ . ~/.profile
 usr/local$ sudo chown -R ubuntu $SPARK_HOME
