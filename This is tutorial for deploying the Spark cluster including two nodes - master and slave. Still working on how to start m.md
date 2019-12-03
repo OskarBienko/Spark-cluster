@@ -12,11 +12,11 @@ This tutorial is based on: https://blog.insightdatascience.com/spinning-up-a-spa
 
 ## The second prerequisite is configuration of "Security Groups". You can find that section on the EC2 Dashboard.
 
-src="![](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130175712665.png)"
+![](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130175712665.png)
 
 1. Enter the "Create Security Group", then name the security group as you like and hit the "Add Rule".
 
-src="![image-20191130180030354](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130180030354.png)"
+![image-20191130180030354](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130180030354.png)
 
 2. Select options as follows and save your security group. <u>You will use it whenever you launch an instance from AMI.</u>
 
@@ -159,5 +159,5 @@ To sum up, I recommend creating two AMIs:
 -  master node, which is basically a slave node but contains **slaves file** and **configurated Jupyter environment**
 - slave node 
 
-src="![image-20191130222047417](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130222047417.png)"
+![image-20191130222047417](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130222047417.png)
 
