@@ -12,7 +12,7 @@ This tutorial is based on: https://blog.insightdatascience.com/spinning-up-a-spa
 
 ## The second prerequisite is configuration of "Security Groups". You can find that section on the EC2 Dashboard.
 
-![](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130175712665.png)
+![](Photos/image-20191130175712665.png)
 
 1. Enter the "Create Security Group", then name the security group as you like and hit the "Add Rule".
 
