@@ -21,7 +21,7 @@ This tutorial is based on: https://blog.insightdatascience.com/spinning-up-a-spa
 ![](images/image-20191130180030354.png)
 
 
-2. Select options as follows and save your security group. <u>You will use it whenever you launch an instance from AMI.</u>
+2. Select options as follows and save your security group.
 
 
 ![](images/image-20191203155258129.png)
