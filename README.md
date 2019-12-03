@@ -2,4 +2,6 @@
 
 This is your README. READMEs are where you can communicate what your project is and how to use it.
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+This is tutorial for deploying the Spark cluster including two nodes - master and slave. 
+Still working on how to start multiple slaves. 
+The instructions will be constantly upgraded.
