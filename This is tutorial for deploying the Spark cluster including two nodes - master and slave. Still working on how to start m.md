@@ -12,19 +12,19 @@ This tutorial is based on: https://blog.insightdatascience.com/spinning-up-a-spa
 
 ## The second prerequisite is configuration of "Security Groups". You can find that section on the EC2 Dashboard.
 
-![](Photos/image-20191130175712665.png)
+![](images/image-20191130175712665.png)
 
 1. Enter the "Create Security Group", then name the security group as you like and hit the "Add Rule".
 
-![image-20191130180030354](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130180030354.png)
+![](images/image-20191130180030354.png)
 
 2. Select options as follows and save your security group. <u>You will use it whenever you launch an instance from AMI.</u>
 
-![image-20191203155258129](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191203155258129.png)
+![](images/image-20191203155258129.png)
 
 3. While either creating or launching an instance from AMI remember to go to the "Configure Security Group" section and to select the very existing security group that you've created.
 
-![image-20191203155508768](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191203155508768.png)
+![](images/image-20191203155508768.png)
 
 ## **Installing Spark on each node
 
@@ -51,7 +51,7 @@ usr/local$ sudo tar xvzf spark-2.4.4-bin-hadoop2.7.tgz
 
 The result after typing ls command should look like below:
 
-<img src="C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130212424881.png" alt="image-20191130212424881"  />
+![](images/image-20191130212424881.png)
 
 ## Basic configuration for any node
 
@@ -87,7 +87,7 @@ cp $SPARK_HOME/conf/spark-env.sh.template $SPARK_HOME/conf/spark-env.sh
 
 If you type basic *ls* command it should look like this:
 
-![image-20191130214729083](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130214729083.png)
+![](images/image-20191130214729083.png)
 
 It's almost done, now we have to change the spark-env.sh file on each of our nodes (e.g. the master node and one slave node). I prefer using vim editor, but it's up to you which one you choose. 
 
