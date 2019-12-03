@@ -14,19 +14,25 @@ This tutorial is based on: https://blog.insightdatascience.com/spinning-up-a-spa
 
 ![](images/image-20191130175712665.png)
 
+
 1. Enter the "Create Security Group", then name the security group as you like and hit the "Add Rule".
+
 
 ![](images/image-20191130180030354.png)
 
+
 2. Select options as follows and save your security group. <u>You will use it whenever you launch an instance from AMI.</u>
+
 
 ![](images/image-20191203155258129.png)
 
+
 3. While either creating or launching an instance from AMI remember to go to the "Configure Security Group" section and to select the very existing security group that you've created.
+
 
 ![](images/image-20191203155508768.png)
 
-## **Installing Spark on each node
+## Installing Spark on each node
 
 Before downloading Spark package, make sure you updated & upgraded Ubuntu.
 
@@ -95,12 +101,12 @@ It's almost done, now we have to change the spark-env.sh file on each of our nod
 usr/local/spark-2.4.4-bin-hadoop2.7/conf$ vim spark-env.sh
 ```
 
-We have to paste just two lines on the beginning of the file:
+We have to paste just two lines in the beginning of the file:
 
 *export JAVA_HOME=/usr*
 *export SPARK_PUBLIC_DNS=”**current_node_public_dns**”*
 
-![](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130215351853.png)
+![](images/image-20191130215351853.png)
 
 Type *:wq* to write and close the file simultaneously.
 
@@ -114,11 +120,11 @@ usr/local/spark-2.4.4-bin-hadoop2.7/conf$ touch $SPARK_HOME/conf/slaves
 
 Obviously the result is:
 
-![image-20191130220423463](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130220423463.png)
+![](images/image-20191130220423463.png)
 
 Let's use vim editor one more time and just paste public DNS, then save & quit.
 
-![image-20191130220914144](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130220914144.png)
+![](images/image-20191130220914144.png)
 
 ##  Launching the cluster.
 
@@ -135,7 +141,7 @@ usr/local$ ./spark-2.4.4-bin-hadoop2.7/sbin/start-master.sh
 After typing localhost:8001 into web browser the output should look like below.
 Copy the highlighted URL so that you can launch a worker.
 
-![image-20191130221308054](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130221308054.png)
+![](images/image-20191130221308054.png)
 
 To connect your slave you just need one more command:
 
@@ -143,7 +149,7 @@ To connect your slave you just need one more command:
  usr/local$ ./spark-2.4.4-bin-hadoop2.7/sbin/start-slave.sh spark://ip-172-31-18-131.eu-west-1.compute.internal:7077
 ```
 
-![image-20191130221507984](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130221507984.png)
+![](images/image-20191130221507984.png)
 
 To turn off your master and slaves servers, use either:
 
@@ -159,5 +165,5 @@ To sum up, I recommend creating two AMIs:
 -  master node, which is basically a slave node but contains **slaves file** and **configurated Jupyter environment**
 - slave node 
 
-![image-20191130222047417](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191130222047417.png)
+![](images/image-20191130222047417.png)
 
