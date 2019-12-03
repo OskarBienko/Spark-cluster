@@ -126,7 +126,7 @@ Let's use vim editor one more time and just paste public DNS, then save & quit.
 
 ![](images/image-20191130220914144.png)
 
-##  Launching the cluster.
+##  Launching the cluster
 
 Before you SSH into the master node, forward the port as follows:
 
