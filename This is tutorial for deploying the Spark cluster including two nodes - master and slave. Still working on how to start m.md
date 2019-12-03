@@ -124,7 +124,7 @@ Let's use vim editor one more time and just paste public DNS, then save & quit.
 
 Before you SSH into the master node, forward the port as follows:
 
-![image-20191203173901525](C:\Users\01133009\AppData\Roaming\Typora\typora-user-images\image-20191203173901525.png)
+https://github.com/OskarBienko/Photos/blob/master/image-20191203173901525.png?raw=true
 
 Use below commands **only on master node**. As always, pay attention to type commands while in the right directory.
 
