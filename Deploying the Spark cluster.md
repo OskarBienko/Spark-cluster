@@ -154,10 +154,10 @@ To connect your slave you just need one more command:
 To turn off your master and slaves servers, use either:
 
 ```bash
-usr/local$./spark-2.4.4-bin-hadoop2.7/sbin/stop-all.sh
+usr/local$ ./spark-2.4.4-bin-hadoop2.7/sbin/stop-all.sh
 or
-usr/local$ ./sbin/stop-master.sh
-usr/local$ ./sbin/stop-slave.sh
+usr/local$ ./spark-2.4.4-bin-hadoop2.7/sbin/stop-master.sh
+usr/local$ ./spark-2.4.4-bin-hadoop2.7/sbin/stop-slave.sh
 ```
 
 To sum up, I recommend creating two AMIs: 
