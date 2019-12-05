@@ -151,7 +151,7 @@ To connect your slave you just need one more command:
 
 ![](images/image-20191130221507984.png)
 
-To turn off your master and slaves servers, use either:
+To turn off your master and slaves, use either:
 
 ```bash
 usr/local$ ./spark-2.4.4-bin-hadoop2.7/sbin/stop-all.sh
